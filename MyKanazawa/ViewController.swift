@@ -10,7 +10,7 @@ import UIKit
 struct facilitiesJson: Codable {
     let name: String?
     let address: String?
-    let url: URL?
+//    let url: URL?
 //    let latitude: Float?
 //    let longitude: Float?
 }
@@ -48,19 +48,20 @@ class ViewController: UIViewController, UITableViewDataSource {
             do {
                 let decoder = JSONDecoder()
                 let json = try decoder.decode(ResultJson.self, from: data!)
-                print(json)
+//                print(json)
                 
                 if let items = json.facilities {
-                    self.kanazawaList.removeAll()
+                    self.KanazawaList.removeAll()
                     for facilities in items {
                         if let name = facilities.name,
-                           let address = facilities.address,
-                           let url = facilities.url
+                           let address = facilities.address
+//                           let url = facilities.url
 //                           let latitude = facilities.latitude,
 //                           let longitude = facilities.longitude
                         {
-                            let kanazawa = (name,address,url)
-                            self.kanazawaList.append(kanazawa)
+//                            let kanazawa = (name,address,url)
+                            let kanazawa = (name,address)
+                            self.KanazawaList.append(kanazawa)
 
                         }
                     }
@@ -68,7 +69,7 @@ class ViewController: UIViewController, UITableViewDataSource {
                     
                     self.tableView.reloadData()
                     
-                    if let kanazawadbg = self.kanazawaList.first {
+                    if let kanazawadbg = self.KanazawaList.first {
                         print("##################################################")
                         print("kanazawaList[0] = \(kanazawadbg)")
                         print("##################################################")
@@ -83,13 +84,13 @@ class ViewController: UIViewController, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return kanazawaList.count
+        return KanazawaList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "kanazawaCell", for: indexPath)
         
-        cell.textLabel?.text = kanazawaList[indexPath.row].name
+        cell.textLabel?.text = KanazawaList[indexPath.row].name
         
         return cell
         
@@ -97,6 +98,19 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var kanazawaList : [(name:String, address:String, url:URL)] = []
+//    var KanazawaList : [(name:String, address:String, url:URL)] = []
+    var KanazawaList : [(name:String, address:String)] = []
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetailSegue" {
+            if let indexPath = tableView.indexPathForSelectedRow {
+                guard let destination = segue.destination as? DetailViewController else {
+                    fatalError("Failed")
+                }
+                //渡す側と受ける側で型が違うと怒られる
+                destination.kanazawaList = KanazawaList[indexPath.row]
+            }
+        }
+    }
     
 }

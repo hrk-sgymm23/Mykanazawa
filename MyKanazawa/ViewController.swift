@@ -10,7 +10,7 @@ import UIKit
 struct facilitiesJson: Codable {
     let name: String?
     let address: String?
-//    let url: URL?
+    let url: URL?
 //    let latitude: Float?
 //    let longitude: Float?
 }
@@ -54,18 +54,15 @@ class ViewController: UIViewController, UITableViewDataSource {
                     self.KanazawaList.removeAll()
                     for facilities in items {
                         if let name = facilities.name,
-                           let address = facilities.address
-//                           let url = facilities.url
+                           let address = facilities.address,
+                           let url = facilities.url
 //                           let latitude = facilities.latitude,
 //                           let longitude = facilities.longitude
                         {
-//                            let kanazawa = (name,address,url)
-                            let kanazawa = (name,address)
+                            let kanazawa = (name,address,url)
                             self.KanazawaList.append(kanazawa)
-
                         }
                     }
-                    
                     
                     self.tableView.reloadData()
                     
@@ -98,8 +95,7 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
     
-//    var KanazawaList : [(name:String, address:String, url:URL)] = []
-    var KanazawaList : [(name:String, address:String)] = []
+    var KanazawaList : [(name:String, address:String, url:URL)] = []
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetailSegue" {
@@ -107,8 +103,12 @@ class ViewController: UIViewController, UITableViewDataSource {
                 guard let destination = segue.destination as? DetailViewController else {
                     fatalError("Failed")
                 }
-                //渡す側と受ける側で型が違うと怒られる
-                destination.kanazawaList = KanazawaList[indexPath.row]
+               
+                destination.kanazawa_name = KanazawaList[indexPath.row].name
+                destination.kanazawa_address = KanazawaList[indexPath.row].address
+                let reurl = KanazawaList[indexPath.row].url.absoluteString
+                destination.kanazawa_url = reurl
+                
             }
         }
     }

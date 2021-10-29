@@ -66,32 +66,33 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="金沢市役所" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jP7-ve-ZAT">
-                                <rect key="frame" x="164" y="343" width="87" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="住所" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TdQ-p6-vi1">
                                 <rect key="frame" x="114" y="388" width="35" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="金沢市" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bYx-FT-oKN">
-                                <rect key="frame" x="164" y="424" width="52" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="リンク" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zU-EC-rgt">
-                                <rect key="frame" x="114" y="472" width="52" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="リンク" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zU-EC-rgt">
+                                <rect key="frame" x="114" y="475" width="52" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="htttp://kanazwa.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7jN-SC-gDe">
-                                <rect key="frame" x="130" y="501" width="155" height="26"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="金沢市泉野町6丁目15番5号（泉野福祉健康センター1F）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nW9-e4-4o7">
+                                <rect key="frame" x="36" y="429" width="358" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="金沢市役所" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rk-e0-Gh6">
+                                <rect key="frame" x="156" y="344" width="215" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="http://kanazawa.com/facilities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Pv-tC-IwT">
+                                <rect key="frame" x="95" y="526" width="224" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -100,37 +101,33 @@
                         <viewLayoutGuide key="safeArea" id="KD1-UZ-DNY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="bYx-FT-oKN" firstAttribute="top" secondItem="jP7-ve-ZAT" secondAttribute="bottom" constant="60" id="0DJ-Et-OsG"/>
                             <constraint firstItem="TdQ-p6-vi1" firstAttribute="top" secondItem="v92-cK-4Mx" secondAttribute="bottom" constant="64" id="1H8-uk-oeF"/>
-                            <constraint firstItem="KD1-UZ-DNY" firstAttribute="bottom" secondItem="7jN-SC-gDe" secondAttribute="bottom" constant="335" id="2UN-Rw-7UA"/>
                             <constraint firstItem="5zU-EC-rgt" firstAttribute="leading" secondItem="KD1-UZ-DNY" secondAttribute="leading" constant="114" id="3FH-7T-lDt"/>
                             <constraint firstItem="KD1-UZ-DNY" firstAttribute="trailing" secondItem="v92-cK-4Mx" secondAttribute="trailing" constant="248" id="92b-go-5at"/>
-                            <constraint firstItem="jP7-ve-ZAT" firstAttribute="leading" secondItem="KD1-UZ-DNY" secondAttribute="leading" constant="164" id="BZy-q1-kkd"/>
-                            <constraint firstItem="7jN-SC-gDe" firstAttribute="top" secondItem="5zU-EC-rgt" secondAttribute="bottom" constant="8" symbolic="YES" id="ClD-mO-Fgw"/>
                             <constraint firstItem="TdQ-p6-vi1" firstAttribute="leading" secondItem="KD1-UZ-DNY" secondAttribute="leading" constant="114" id="DTk-xi-ZzJ"/>
                             <constraint firstItem="v92-cK-4Mx" firstAttribute="top" secondItem="KD1-UZ-DNY" secondAttribute="top" constant="215" id="Esk-Hx-7oW"/>
-                            <constraint firstItem="KD1-UZ-DNY" firstAttribute="trailing" secondItem="7jN-SC-gDe" secondAttribute="trailing" constant="129" id="GLO-nt-DJg"/>
-                            <constraint firstItem="bYx-FT-oKN" firstAttribute="leading" secondItem="KD1-UZ-DNY" secondAttribute="leading" constant="164" id="ISG-hw-DiB"/>
-                            <constraint firstItem="jP7-ve-ZAT" firstAttribute="top" secondItem="KD1-UZ-DNY" secondAttribute="top" constant="255" id="Mhs-7I-xpq"/>
+                            <constraint firstItem="nW9-e4-4o7" firstAttribute="top" secondItem="TdQ-p6-vi1" secondAttribute="bottom" constant="17" id="HBi-DI-pio"/>
+                            <constraint firstItem="KD1-UZ-DNY" firstAttribute="trailing" secondItem="5rk-e0-Gh6" secondAttribute="trailing" constant="158" id="QNg-jz-uy9"/>
+                            <constraint firstItem="5zU-EC-rgt" firstAttribute="top" secondItem="nW9-e4-4o7" secondAttribute="bottom" constant="16" id="R9A-dY-7aS"/>
+                            <constraint firstItem="KD1-UZ-DNY" firstAttribute="trailing" secondItem="nW9-e4-4o7" secondAttribute="trailing" constant="176" id="Xaj-Kz-y79"/>
                             <constraint firstItem="KD1-UZ-DNY" firstAttribute="trailing" secondItem="5zU-EC-rgt" secondAttribute="trailing" constant="248" id="ZtV-9t-gFJ"/>
+                            <constraint firstItem="nW9-e4-4o7" firstAttribute="leading" secondItem="KD1-UZ-DNY" secondAttribute="leading" constant="36" id="fla-VG-Tr9"/>
                             <constraint firstItem="KD1-UZ-DNY" firstAttribute="trailing" secondItem="TdQ-p6-vi1" secondAttribute="trailing" constant="265" id="fm6-hl-eTi"/>
-                            <constraint firstItem="7jN-SC-gDe" firstAttribute="leading" secondItem="KD1-UZ-DNY" secondAttribute="leading" constant="130" id="gGT-jN-WKk"/>
                             <constraint firstItem="5zU-EC-rgt" firstAttribute="top" secondItem="TdQ-p6-vi1" secondAttribute="bottom" constant="63" id="hZy-pi-sg4"/>
-                            <constraint firstItem="KD1-UZ-DNY" firstAttribute="trailing" secondItem="bYx-FT-oKN" secondAttribute="trailing" constant="198" id="hrF-Zq-Dxz"/>
-                            <constraint firstItem="KD1-UZ-DNY" firstAttribute="bottom" secondItem="7jN-SC-gDe" secondAttribute="bottom" constant="367" id="ijc-ti-6Em"/>
-                            <constraint firstItem="KD1-UZ-DNY" firstAttribute="trailing" secondItem="7jN-SC-gDe" secondAttribute="trailing" constant="129" id="kac-6W-A51"/>
+                            <constraint firstAttribute="trailing" secondItem="nW9-e4-4o7" secondAttribute="trailing" constant="-175" id="hc1-5G-ysR"/>
                             <constraint firstItem="5zU-EC-rgt" firstAttribute="top" secondItem="TdQ-p6-vi1" secondAttribute="bottom" constant="63" id="nkK-EZ-Kb8"/>
+                            <constraint firstItem="5rk-e0-Gh6" firstAttribute="leading" secondItem="KD1-UZ-DNY" secondAttribute="leading" constant="169" id="nqo-hb-kCj"/>
                             <constraint firstItem="TdQ-p6-vi1" firstAttribute="top" secondItem="v92-cK-4Mx" secondAttribute="bottom" constant="64" id="onQ-LO-hep"/>
-                            <constraint firstItem="bYx-FT-oKN" firstAttribute="top" secondItem="jP7-ve-ZAT" secondAttribute="bottom" constant="60" id="wLf-K3-1kC"/>
-                            <constraint firstItem="KD1-UZ-DNY" firstAttribute="trailing" secondItem="jP7-ve-ZAT" secondAttribute="trailing" constant="163" id="xWp-81-WqX"/>
+                            <constraint firstItem="KD1-UZ-DNY" firstAttribute="bottom" secondItem="nW9-e4-4o7" secondAttribute="bottom" constant="403" id="vz6-lH-3WO"/>
+                            <constraint firstItem="5rk-e0-Gh6" firstAttribute="top" secondItem="KD1-UZ-DNY" secondAttribute="top" constant="256" id="wRj-dJ-mWH"/>
                             <constraint firstItem="v92-cK-4Mx" firstAttribute="leading" secondItem="KD1-UZ-DNY" secondAttribute="leading" constant="114" id="yhn-HO-hHv"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0ig-dF-WTo"/>
                     <connections>
-                        <outlet property="addresLabel" destination="bYx-FT-oKN" id="6rK-c3-ede"/>
-                        <outlet property="facilitiesNameLabel" destination="jP7-ve-ZAT" id="vhu-As-Glr"/>
-                        <outlet property="linkLabel" destination="7jN-SC-gDe" id="UN6-1x-QaH"/>
+                        <outlet property="addressLabel" destination="nW9-e4-4o7" id="Wdk-eP-UKy"/>
+                        <outlet property="linkLabel" destination="2Pv-tC-IwT" id="ywT-Nh-mrO"/>
+                        <outlet property="nameLabel" destination="5rk-e0-Gh6" id="d6c-IF-NVo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LOq-Ac-IqC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

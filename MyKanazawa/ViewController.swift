@@ -58,7 +58,9 @@ class ViewController: UIViewController, UITableViewDataSource {
                            let url = facilities.url
 //                           let latitude = facilities.latitude,
 //                           let longitude = facilities.longitude
+                        
                         {
+//                            let kanazawa = (name,address,url,latitude,longitude)
                             let kanazawa = (name,address,url)
                             self.KanazawaList.append(kanazawa)
                         }
@@ -95,6 +97,7 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
     
+//    var KanazawaList : [(name:String, address:String, url:URL, latitude:Float, longitude:Float)] = []
     var KanazawaList : [(name:String, address:String, url:URL)] = []
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -112,5 +115,4 @@ class ViewController: UIViewController, UITableViewDataSource {
             }
         }
     }
-    
 }

@@ -60,39 +60,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="施設名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v92-cK-4Mx">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="施設名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v92-cK-4Mx">
                                 <rect key="frame" x="114" y="303" width="52" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="住所" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TdQ-p6-vi1">
-                                <rect key="frame" x="114" y="388" width="35" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="住所" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TdQ-p6-vi1">
+                                <rect key="frame" x="114" y="388" width="35" height="19"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="リンク" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zU-EC-rgt">
-                                <rect key="frame" x="114" y="475" width="52" height="21"/>
+                                <rect key="frame" x="114" y="470" width="52" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="金沢市泉野町6丁目15番5号（泉野福祉健康センター1F）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nW9-e4-4o7">
-                                <rect key="frame" x="36" y="429" width="358" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="金沢市泉野町6丁目15番5号（泉野福祉健康センター1F）" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8KV-6f-048">
+                                <rect key="frame" x="114" y="426" width="240" height="25"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="http://kanazawa-it.ac.jp" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LfY-Qy-Mux">
+                                <rect key="frame" x="114" y="544" width="240" height="198"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="金沢市役所" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rk-e0-Gh6">
-                                <rect key="frame" x="156" y="344" width="215" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="http://kanazawa.com/facilities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Pv-tC-IwT">
-                                <rect key="frame" x="95" y="526" width="224" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="114" y="342" width="215" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -103,30 +104,42 @@
                         <constraints>
                             <constraint firstItem="TdQ-p6-vi1" firstAttribute="top" secondItem="v92-cK-4Mx" secondAttribute="bottom" constant="64" id="1H8-uk-oeF"/>
                             <constraint firstItem="5zU-EC-rgt" firstAttribute="leading" secondItem="KD1-UZ-DNY" secondAttribute="leading" constant="114" id="3FH-7T-lDt"/>
+                            <constraint firstItem="LfY-Qy-Mux" firstAttribute="top" secondItem="5zU-EC-rgt" secondAttribute="bottom" constant="121" id="3K5-ig-hIC"/>
+                            <constraint firstItem="KD1-UZ-DNY" firstAttribute="trailing" secondItem="8KV-6f-048" secondAttribute="trailing" constant="60" id="4lc-l6-JUG"/>
+                            <constraint firstItem="5rk-e0-Gh6" firstAttribute="top" secondItem="v92-cK-4Mx" secondAttribute="bottom" constant="20" id="7mI-Vr-GTb"/>
                             <constraint firstItem="KD1-UZ-DNY" firstAttribute="trailing" secondItem="v92-cK-4Mx" secondAttribute="trailing" constant="248" id="92b-go-5at"/>
+                            <constraint firstItem="KD1-UZ-DNY" firstAttribute="trailing" secondItem="LfY-Qy-Mux" secondAttribute="trailing" constant="60" id="9Ly-XT-qge"/>
                             <constraint firstItem="TdQ-p6-vi1" firstAttribute="leading" secondItem="KD1-UZ-DNY" secondAttribute="leading" constant="114" id="DTk-xi-ZzJ"/>
                             <constraint firstItem="v92-cK-4Mx" firstAttribute="top" secondItem="KD1-UZ-DNY" secondAttribute="top" constant="215" id="Esk-Hx-7oW"/>
-                            <constraint firstItem="nW9-e4-4o7" firstAttribute="top" secondItem="TdQ-p6-vi1" secondAttribute="bottom" constant="17" id="HBi-DI-pio"/>
+                            <constraint firstItem="5rk-e0-Gh6" firstAttribute="leading" secondItem="KD1-UZ-DNY" secondAttribute="leading" constant="114" id="I5s-ob-0p0"/>
+                            <constraint firstItem="5rk-e0-Gh6" firstAttribute="top" secondItem="v92-cK-4Mx" secondAttribute="bottom" constant="18" id="I8z-ly-Dmw"/>
+                            <constraint firstItem="8KV-6f-048" firstAttribute="leading" secondItem="KD1-UZ-DNY" secondAttribute="leading" constant="114" id="JhH-71-usF"/>
+                            <constraint firstItem="LfY-Qy-Mux" firstAttribute="leading" secondItem="KD1-UZ-DNY" secondAttribute="leading" constant="114" id="QNC-je-YF6"/>
                             <constraint firstItem="KD1-UZ-DNY" firstAttribute="trailing" secondItem="5rk-e0-Gh6" secondAttribute="trailing" constant="158" id="QNg-jz-uy9"/>
-                            <constraint firstItem="5zU-EC-rgt" firstAttribute="top" secondItem="nW9-e4-4o7" secondAttribute="bottom" constant="16" id="R9A-dY-7aS"/>
-                            <constraint firstItem="KD1-UZ-DNY" firstAttribute="trailing" secondItem="nW9-e4-4o7" secondAttribute="trailing" constant="176" id="Xaj-Kz-y79"/>
+                            <constraint firstItem="5rk-e0-Gh6" firstAttribute="leading" secondItem="KD1-UZ-DNY" secondAttribute="leading" constant="156" id="QP5-Oy-Zn9"/>
+                            <constraint firstItem="KD1-UZ-DNY" firstAttribute="bottom" secondItem="LfY-Qy-Mux" secondAttribute="bottom" constant="120" id="Vss-Dx-LTs"/>
+                            <constraint firstItem="KD1-UZ-DNY" firstAttribute="trailing" secondItem="5rk-e0-Gh6" secondAttribute="trailing" constant="43" id="W4L-NB-RlU"/>
+                            <constraint firstItem="LfY-Qy-Mux" firstAttribute="top" secondItem="5zU-EC-rgt" secondAttribute="bottom" constant="28" id="ZTc-OG-0gT"/>
                             <constraint firstItem="KD1-UZ-DNY" firstAttribute="trailing" secondItem="5zU-EC-rgt" secondAttribute="trailing" constant="248" id="ZtV-9t-gFJ"/>
-                            <constraint firstItem="nW9-e4-4o7" firstAttribute="leading" secondItem="KD1-UZ-DNY" secondAttribute="leading" constant="36" id="fla-VG-Tr9"/>
                             <constraint firstItem="KD1-UZ-DNY" firstAttribute="trailing" secondItem="TdQ-p6-vi1" secondAttribute="trailing" constant="265" id="fm6-hl-eTi"/>
                             <constraint firstItem="5zU-EC-rgt" firstAttribute="top" secondItem="TdQ-p6-vi1" secondAttribute="bottom" constant="63" id="hZy-pi-sg4"/>
-                            <constraint firstAttribute="trailing" secondItem="nW9-e4-4o7" secondAttribute="trailing" constant="-175" id="hc1-5G-ysR"/>
+                            <constraint firstItem="5zU-EC-rgt" firstAttribute="top" secondItem="8KV-6f-048" secondAttribute="bottom" constant="19" id="jix-wf-SdJ"/>
+                            <constraint firstItem="KD1-UZ-DNY" firstAttribute="trailing" secondItem="5rk-e0-Gh6" secondAttribute="trailing" constant="85" id="mHu-hG-K2e"/>
                             <constraint firstItem="5zU-EC-rgt" firstAttribute="top" secondItem="TdQ-p6-vi1" secondAttribute="bottom" constant="63" id="nkK-EZ-Kb8"/>
                             <constraint firstItem="5rk-e0-Gh6" firstAttribute="leading" secondItem="KD1-UZ-DNY" secondAttribute="leading" constant="169" id="nqo-hb-kCj"/>
                             <constraint firstItem="TdQ-p6-vi1" firstAttribute="top" secondItem="v92-cK-4Mx" secondAttribute="bottom" constant="64" id="onQ-LO-hep"/>
-                            <constraint firstItem="KD1-UZ-DNY" firstAttribute="bottom" secondItem="nW9-e4-4o7" secondAttribute="bottom" constant="403" id="vz6-lH-3WO"/>
+                            <constraint firstItem="LfY-Qy-Mux" firstAttribute="top" secondItem="5zU-EC-rgt" secondAttribute="bottom" constant="53" id="p0a-Md-FKr"/>
+                            <constraint firstItem="TdQ-p6-vi1" firstAttribute="top" secondItem="5rk-e0-Gh6" secondAttribute="bottom" constant="25" id="q2h-r3-w1w"/>
+                            <constraint firstItem="8KV-6f-048" firstAttribute="top" secondItem="TdQ-p6-vi1" secondAttribute="bottom" constant="19" id="qGN-sM-61b"/>
+                            <constraint firstItem="8KV-6f-048" firstAttribute="top" secondItem="5rk-e0-Gh6" secondAttribute="bottom" constant="63" id="rob-fk-SXj"/>
                             <constraint firstItem="5rk-e0-Gh6" firstAttribute="top" secondItem="KD1-UZ-DNY" secondAttribute="top" constant="256" id="wRj-dJ-mWH"/>
                             <constraint firstItem="v92-cK-4Mx" firstAttribute="leading" secondItem="KD1-UZ-DNY" secondAttribute="leading" constant="114" id="yhn-HO-hHv"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0ig-dF-WTo"/>
                     <connections>
-                        <outlet property="addressLabel" destination="nW9-e4-4o7" id="Wdk-eP-UKy"/>
-                        <outlet property="linkLabel" destination="2Pv-tC-IwT" id="ywT-Nh-mrO"/>
+                        <outlet property="addressText" destination="8KV-6f-048" id="dDl-qN-uZH"/>
+                        <outlet property="linkText" destination="LfY-Qy-Mux" id="5ky-l5-FdY"/>
                         <outlet property="nameLabel" destination="5rk-e0-Gh6" id="d6c-IF-NVo"/>
                     </connections>
                 </viewController>
@@ -154,6 +167,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
